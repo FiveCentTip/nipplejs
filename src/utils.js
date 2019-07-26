@@ -65,7 +65,7 @@ export const trigger = (el, type, data) => {
 
 export const prepareEvent = (evt) => {
     const evtCSSClass = evt.target.className;
-    const isNipple = evtCSSClass == 'front' || evtCSSClass == 'back';
+    const isNipple = evtCSSClass == 'front' || evtCSSClass == 'back' || evtCSSClass  == 'punch_btn';
     if (isNipple) {
         evt.preventDefault();
     }
